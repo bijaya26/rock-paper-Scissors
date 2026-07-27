@@ -1,3 +1,4 @@
+/function computer choice created using math.random/
 function getComputerChoice(){
     let choice=Math.random();
     if(choice<=0.33){
@@ -12,16 +13,18 @@ function getComputerChoice(){
     }
 
 }
+/function humanChoice created that take human choice/
 
 function getHumanChoice(){
     return prompt("Which one you choose").toLowerCase();
 }
 
-
+/global variable created/
 
 let humanScore=0;
 let computerScore=0;
 
+/function playround created/
 
 function playRound(humanChoice,computerChoice){
     if(computerChoice==="rock" && humanChoice==="rock"){
@@ -72,6 +75,8 @@ function playRound(humanChoice,computerChoice){
 
 }
 
+/playgame function created/
+
 
 function playGame(){
     for(i=1;i<=5;i++){
@@ -93,6 +98,7 @@ function playGame(){
 }
 
 }
+/playgame function called/
 
 playGame();
 
