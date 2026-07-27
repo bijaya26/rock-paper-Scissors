@@ -1,4 +1,4 @@
-/function computer choice created using math.random/
+//function computer choice created using math.random//
 function getComputerChoice(){
     let choice=Math.random();
     if(choice<=0.33){
@@ -13,18 +13,18 @@ function getComputerChoice(){
     }
 
 }
-/function humanChoice created that take human choice/
+//function humanChoice created that take human choice//
 
 function getHumanChoice(){
     return prompt("Which one you choose").toLowerCase();
 }
 
-/global variable created/
+//global variable created//
 
 let humanScore=0;
 let computerScore=0;
 
-/function playround created/
+//function playround created//
 
 function playRound(humanChoice,computerChoice){
     if(computerChoice==="rock" && humanChoice==="rock"){
@@ -55,8 +55,8 @@ function playRound(humanChoice,computerChoice){
     }
 
     else if (computerChoice=="paper" && humanChoice==="rock"){
-        humanScore++;
-        console.log("user win");
+        computerScore++;
+        console.log("computer win");
     }
 
     else if (computerChoice==="paper"&&humanChoice==="scissors"){
@@ -75,14 +75,15 @@ function playRound(humanChoice,computerChoice){
 
 }
 
-/playgame function created/
+//playgame function created//
 
 
 function playGame(){
-    for(i=1;i<=5;i++){
+    for(let i=1;i<=5;i++){
     const humanSelection=getHumanChoice();
     const computerSelection=getComputerChoice();
     playRound(humanSelection,computerSelection);
+}
 
     if(computerScore>humanScore){
         console.log("sorry computer win");
@@ -96,9 +97,7 @@ function playGame(){
     }
 
 }
-
-}
-/playgame function called/
+//playgame function called//
 
 playGame();
 
