@@ -1,3 +1,4 @@
+/*
 //function computer choice created using math.random//
 function getComputerChoice(){
     let choice=Math.random();
@@ -101,8 +102,20 @@ function playGame(){
 
 playGame();
 
+*/
 
+function isLeapYear(number){
+    if(number%4==0){
+        return "Yes leap year";
+    }
+    else{
+        return "no leap year";
+    }
 
+}
+
+leapYear=isLeapYear(2025);
+console.log(leapYear);
 
 
 
